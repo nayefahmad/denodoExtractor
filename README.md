@@ -7,24 +7,29 @@
 
 <!-- badges: end -->
 
-The goal of denodoExtractor is to …
+The goal of denodoExtractor is to make it easy to pull common patient
+flow metrics from denodo views into R. Examples include daily ED visits,
+admits/census/discharges for specified nursing units, etc.
 
 ## Installation
 
-You can install the released version of denodoExtractor from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the package from GitHub:
 
 ``` r
-install.packages("denodoExtractor")
+# install.packages("devtools")
+devtools::install_github("nayefahmad/denodoExtractor")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to set up the Denodo ODBC
+connection and pull admits data; todo:
 
 ``` r
 library(denodoExtractor)
-## basic example code
+setup_denodo()
+
+# should return 3 views: vw_adtc, vw_census, vw_eddata
 ```
 
 ## Notes on package development
