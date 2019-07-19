@@ -18,3 +18,4 @@ Imports:
     dbplyr,
     here,
     DBI
+RoxygenNote: 6.1.1
