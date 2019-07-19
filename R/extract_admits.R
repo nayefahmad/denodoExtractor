@@ -3,7 +3,7 @@
 #' @param startdate_id e.g. "20190101"
 #' @param enddate_id e.g. "20190101"
 #' @param site e.g. "Lions Gate Hospital"
-#' @param n_units e.g. "LGH 4E"
+#' @param n_units e.g. "LGH 4E". Corresponds to denodo field nursing_unit_short_desc_at_admit
 #' @param denodo_vw e.g. vw_adtc. denodo_view is the name of the table saved as a connection via dbplyr
 #'
 #' @return a dataframe with dates and admission counts, by nursing unit

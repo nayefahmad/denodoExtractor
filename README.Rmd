@@ -30,13 +30,25 @@ devtools::install_github("nayefahmad/denodoExtractor")
 
 ## Example
 
-This is a basic example which shows you how to set up the Denodo ODBC connection and pull admits data; todo: 
+This is a basic example which shows you how to set up the Denodo ODBC connection and pull admits data. I assume you have set up the Denodo ODBC Driver, and that you have a ODBC connection named "cnx_denodo_spappcsta001". If you have a different name, you can pass that to the `dsn_name` argument of the `setup_denodo()` function.  
 
 ```{r example}
 library(denodoExtractor)
-setup_denodo()
 
+# first set up odbc: 
+setup_denodo()
 # should return 3 views: vw_adtc, vw_census, vw_eddata
+
+# Let's pull admits to major LGH units in January: 
+extract_admits("20190101", "20190201")
+
+
+# Now let's try VGH ECC unit instead: 
+extract_admits("20190101", 
+               "20190115",
+               site = "Vancouver General Hospital", 
+               n_units = "ECC")
+
 
 ```
 

@@ -16,7 +16,7 @@ extract_admits(startdate_id, enddate_id, site = "Lions Gate Hospital",
 
 \item{site}{e.g. "Lions Gate Hospital"}
 
-\item{n_units}{e.g. "LGH 4E"}
+\item{n_units}{e.g. "LGH 4E". Corresponds to denodo field nursing_unit_short_desc_at_admit}
 
 \item{denodo_vw}{e.g. vw_adtc. denodo_view is the name of the table saved as a connection via dbplyr}
 }
