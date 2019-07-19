@@ -5,7 +5,9 @@
 \title{Extract admits by nursing unit}
 \usage{
 extract_admits(startdate_id, enddate_id, site = "Lions Gate Hospital",
-  n_units = c("LGH 4E"), denodo_vw = vw_adtc)
+  n_units = c("LGH 2E", "LGH 3E", "LGH 3W", "LGH 4E", "LGH 4W", "LGH 5E",
+  "LGH 6E", "LGH 6W", "LGH 7E", "LGH 7W", "LGH 7W", "LGH EIP", "LGH ICU"),
+  denodo_vw = vw_adtc)
 }
 \arguments{
 \item{startdate_id}{e.g. "20190101"}
@@ -16,10 +18,10 @@ extract_admits(startdate_id, enddate_id, site = "Lions Gate Hospital",
 
 \item{n_units}{e.g. "LGH 4E"}
 
-\item{denodo_vw}{vw_adtc}
+\item{denodo_vw}{e.g. vw_adtc. denodo_view is the name of the table saved as a connection via dbplyr}
 }
 \value{
-a dataframe
+a dataframe with dates and admission counts, by nursing unit
 }
 \description{
 Extract admits by nursing unit
