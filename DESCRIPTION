@@ -1,14 +1,14 @@
 Package: denodoExtractor
-Title: What the Package Does (One Line, Title Case)
+Title: Convenience functions for extracting data from Denodo
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Nayef",
+           family = "Ahmad",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "nayef.ahmadt@vch.ca",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+Description: Convenience functions for extracting data from Denodo
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
@@ -16,4 +16,5 @@ Imports:
     dplyr,
     odbc,
     dbplyr,
-    here
+    here,
+    DBI
