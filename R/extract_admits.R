@@ -10,6 +10,8 @@
 #' @export
 #'
 #' @examples
+#' extract_admits("20190101", "20190107)
+#'
 extract_admits <- function(startdate_id,
                            enddate_id,
                            site = "Lions Gate Hospital",
