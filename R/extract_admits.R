@@ -10,8 +10,9 @@
 #' @export
 #'
 #' @examples
-#' extract_admits("20190101", "20190107)
-#'
+#' setup_denodo()
+#' extract_admits("20190101", "20190107")
+#' Should return admits for major nursing units at LGH
 extract_admits <- function(startdate_id,
                            enddate_id,
                            site = "Lions Gate Hospital",

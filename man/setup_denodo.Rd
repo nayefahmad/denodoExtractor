@@ -9,6 +9,9 @@ setup_denodo(dsn_name = "cnx_denodo_spappcsta001")
 \arguments{
 \item{dsn_name}{A string specifying connection name. Default value is "cnx_denodo_spappcsta001", because that's the name I use.}
 }
+\value{
+Returns connections to databases
+}
 \description{
 Set up ODBC connection to denodo
 }

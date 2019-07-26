@@ -2,7 +2,7 @@
 #'
 #' @param dsn_name A string specifying connection name. Default value is "cnx_denodo_spappcsta001", because that's the name I use.
 #'
-#' @return
+#' @return Returns connections to databases
 #' @export
 #'
 #' @examples
