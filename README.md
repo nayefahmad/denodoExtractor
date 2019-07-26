@@ -18,6 +18,8 @@ You can install the package from GitHub:
 ``` r
 # install.packages("devtools")
 devtools::install_github("nayefahmad/denodoExtractor")
+#> Skipping install of 'denodoExtractor' from a github remote, the SHA1 (337e4755) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 ## Example
@@ -28,6 +30,8 @@ ODBC Driver, and that you have a ODBC connection named
 “cnx\_denodo\_spappcsta001”. If you have a different name, you can
 pass that to the `dsn_name` argument of the `setup_denodo()` function.
 
+First, let’s set up our ODBC connection:
+
 ``` r
 library(denodoExtractor)
 #> Loading required package: magrittr
@@ -35,8 +39,11 @@ library(denodoExtractor)
 # first set up odbc: 
 setup_denodo()
 # should return 3 views: vw_adtc, vw_census, vw_eddata
+```
 
-# Let's pull admits to major LGH units in January: 
+Let’s pull admits to major LGH units in January:
+
+``` r
 extract_admits("20190101", "20190201")
 #> # A tibble: 59 x 4
 #>     date_id nursing_unit_cd metric value
@@ -52,9 +59,11 @@ extract_admits("20190101", "20190201")
 #>  9 20190105 LGH 3E          admits     2
 #> 10 20190106 LGH 3E          admits     3
 #> # ... with 49 more rows
+```
 
+Now let’s try VGH ECC unit instead:
 
-# Now let's try VGH ECC unit instead: 
+``` r
 extract_admits("20190101", 
                "20190115",
                site = "Vancouver General Hospital", 
@@ -72,6 +81,15 @@ extract_admits("20190101",
 #>  8 20190111 ECC             admits    27
 #>  9 20190114 ECC             admits    16
 #> 10 20190115 ECC             admits    19
+```
+
+## Getting help
+
+To see documentation for a specific function, use a question mark
+followed by the
+
+``` r
+# help(package = "denodoExtractor")
 ```
 
 ## Notes on package development
