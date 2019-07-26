@@ -65,7 +65,7 @@ extract_admits("20190101",
 ```
 
 ## Getting help 
-To see documentation for a specific function, use a question mark followed by the function name in the console. For exampe: 
+To see documentation for a specific function, use a question mark followed by the function name in the console. For example: 
 
 ```{r}
 # ?setup_denodo
