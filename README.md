@@ -18,7 +18,7 @@ You can install the package from GitHub:
 ``` r
 # install.packages("devtools")
 devtools::install_github("nayefahmad/denodoExtractor")
-#> Skipping install of 'denodoExtractor' from a github remote, the SHA1 (337e4755) has not changed since last install.
+#> Skipping install of 'denodoExtractor' from a github remote, the SHA1 (501d128a) has not changed since last install.
 #>   Use `force = TRUE` to force installation
 ```
 
@@ -86,10 +86,11 @@ extract_admits("20190101",
 ## Getting help
 
 To see documentation for a specific function, use a question mark
-followed by the
+followed by the function name in the console. For example:
 
 ``` r
-# help(package = "denodoExtractor")
+# ?setup_denodo
+# ?extract_admits
 ```
 
 ## Notes on package development
