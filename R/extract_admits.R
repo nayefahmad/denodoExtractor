@@ -30,21 +30,21 @@ extract_admits <- function(startdate_id,
 
   denodo_vw %>%
     dplyr::filter(facility_name == !!(site),  # !! used to unquote the actual argument "site"
-              admission_date_id >= startdate_id,
-              admission_date_id <= enddate_id,
+              admit_date_id >= startdate_id,
+              admit_date_id <= enddate_id,
               nursing_unit_short_desc_at_admit %in% n_units) %>%
 
-    dplyr::select(admission_date_id,
+    dplyr::select(admit_date_id,
               patient_id,
               nursing_unit_short_desc_at_admit,
               facility_name) %>%  # show_query()
 
     dplyr::collect() %>%
 
-    dplyr::group_by(admission_date_id,
+    dplyr::group_by(admit_date_id,
               nursing_unit_short_desc_at_admit) %>%
     dplyr::summarise(admits = n()) %>%
-    dplyr::rename(date_id = admission_date_id,
+    dplyr::rename(date_id = admit_date_id,
               nursing_unit_cd = nursing_unit_short_desc_at_admit) %>%
 
     # display in long format:
