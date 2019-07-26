@@ -120,3 +120,10 @@ commit/push. You will have to use git bash with command `git commit
 
 To get around this, simply add .sample at the end of the filename:
 pre-commit.sample. Now it will be ignored by GitHub.
+
+### Package installation errors
+
+You may get an error saying: `Error: failed to install package X ...
+cannot remove prior installation of package`. If this happens, just
+manually install the package in console using `install.packages(package
+name)`
