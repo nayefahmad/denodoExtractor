@@ -16,7 +16,9 @@ Imports:
     odbc,
     dbplyr,
     here,
-    DBI
+    DBI,
+    rlang,
+    lubridate
 Depends: 
     magrittr
 RoxygenNote: 6.1.1
