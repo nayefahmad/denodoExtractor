@@ -29,5 +29,4 @@ Extract admits by nursing unit
 \examples{
 setup_denodo()
 extract_admits("20190101", "20190107")
-Should return admits for major nursing units at LGH
 }
