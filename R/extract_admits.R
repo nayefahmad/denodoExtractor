@@ -14,7 +14,7 @@
 #' extract_admits("20190101", "20190107")
 extract_admits <- function(startdate_id,
                            enddate_id,
-                           site = "Lions Gate Hospital",
+                           site = "LGH Lions Gate",
                            n_units = c("LGH 2E",
                                        "LGH 3E",
                                        "LGH 3W",
