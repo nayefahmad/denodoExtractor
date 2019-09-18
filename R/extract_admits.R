@@ -28,7 +28,7 @@ extract_admits <- function(startdate_id,
                                        "LGH 7W",
                                        "LGH EIP",
                                        "LGH ICU"),
-                           denodo_vw = vw_adtc){
+                           denodo_vw = vw_admission_discharge){
 
   denodo_vw %>%
     dplyr::filter(facility_name == !!(site),  # !! used to unquote the actual argument "site"

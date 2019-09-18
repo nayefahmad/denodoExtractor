@@ -18,9 +18,9 @@ setup_denodo <- function(dsn_name = "cnx_denodo_spappcsta001"){
   vw_eddata <<- dplyr::tbl(cnx,
                            dbplyr::in_schema("publish",
                                              "emergency"))
-  vw_adtc <<- dplyr::tbl(cnx,
-                         dbplyr::in_schema("publish",
-                                           "admission_discharge"))
+  vw_admission_discharge <<- dplyr::tbl(cnx,
+                                        dbplyr::in_schema("publish",
+                                                          "admission_discharge"))
 
 
 
