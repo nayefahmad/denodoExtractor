@@ -4,10 +4,10 @@
 \alias{extract_admits}
 \title{Extract admits by nursing unit}
 \usage{
-extract_admits(startdate_id, enddate_id, site = "Lions Gate Hospital",
+extract_admits(startdate_id, enddate_id, site = "LGH Lions Gate",
   n_units = c("LGH 2E", "LGH 3E", "LGH 3W", "LGH 4E", "LGH 4W", "LGH 5E",
   "LGH 6E", "LGH 6W", "LGH 7E", "LGH 7W", "LGH 7W", "LGH EIP", "LGH ICU"),
-  denodo_vw = vw_adtc)
+  denodo_vw = vw_admission_discharge)
 }
 \arguments{
 \item{startdate_id}{e.g. "20190101"}

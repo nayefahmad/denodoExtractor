@@ -1,8 +1,8 @@
-test_that("ODBC connection is working okay", {
+test_that("ODBC connection to denodo is working okay", {
 
   setup_denodo()
 
-  expect_true(exists("vw_adtc"))
+  expect_true(exists("vw_admission_discharge"))
   expect_true(exists("vw_eddata"))
   expect_true(exists("vw_census"))
 })
